@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    <script src="vendors/jquery-3.3.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="container">
+
+    <header class="card-header">
+        <h1>Salary Calculator</h1>
+    </header>
+
+    <main>
+
+        <h4 class="card-body">Add Employee</h4>
+
+        <div class="input-group-text">
+            <input id="firstName" type="text" placeholder="First Name" />
+            <input id="lastName" type="text" placeholder="Last Name" />
+            <input id="idNumber" type="text" placeholder="ID Number" />
+            <input id="jobTitle" type="text" placeholder="Job Title" />
+            <input id="annualSalary" type="text" data-prefix="$" placeholder="Annual Salary" />
+            <button id="submit" class="btn btn-outline-secondary">Submit</button>
+        </div>
+
+        <h4 class="card-body">Employees</h4>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Annual Salary</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTable"></tbody>
+        </table>
+
+        <div id="monthly">
+        </div>
+
+    </main>
+
+</body>
+
+</html>
